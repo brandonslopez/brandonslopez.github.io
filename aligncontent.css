@@ -1,0 +1,76 @@
+
+/*Now that elements can wrap to the next line, we might have multiple rows of flex items within the same container. In a previous exercise, we used the align-items property to space flex items from the top to the bottom of a flex container. align-items is for aligning elements within a single row. If a flex container has multiple rows of content, we can use align-content to space the rows from top to bottom. */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #010e80;
+	display: table;
+	width: 100%;
+}
+
+nav li {
+	display: table-cell;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 30px 30px;
+	text-decoration: none;
+}
+body {
+  margin: 0;
+  border: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  margin: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.container {
+  height: 300px;
+  width: 600px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.left,
+.center,
+.right {
+  min-height: 75px;
+  width: 200px;
+  margin: 2px;
+  background-color: dodgerblue;
+  border: 2px solid lightgrey;
+}
+
+#flexstart {
+  align-content: flex-start;
+}
+
+#flexend {
+  align-content: flex-end;
+}
+
+#center {
+  align-content: center;
+}
+
+#between {
+  align-content: space-between;
+}
+
+#around {
+  align-content: space-around;
+}
